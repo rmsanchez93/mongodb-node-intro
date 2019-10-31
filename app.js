@@ -1,12 +1,16 @@
+// requiring necessary packages
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+// express app built
 const app = express();
+// requiring mongoose Models we built
 const Teams = require('./models/teams')
 const Players = require('./models/players')
+// making PORT variable
 const PORT = 3000
 
-//use bodyParser
+//express to use bodyParser to parse our requests
 app.use(bodyParser.json())
 
 
